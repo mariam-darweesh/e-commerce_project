@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
+import PageContainer from "../components/layout/PageContainer";
 import useCart from "../hooks/useCart";
 
 export default function CartPage() {
@@ -15,7 +14,7 @@ export default function CartPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      <Navbar />
+      <PageContainer>
 
       <main className="mx-auto max-w-7xl px-6 py-10">
         <div className="mb-6 flex items-center justify-between">
@@ -120,8 +119,7 @@ export default function CartPage() {
           </div>
         )}
       </main>
-
-      <Footer />
+      </PageContainer>
     </div>
   );
 }

@@ -1,10 +1,8 @@
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
-
+import PageContainer from "../components/layout/PageContainer";
 export default function CheckoutPage() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-      <Navbar />
+      <PageContainer>
 
       <main className="mx-auto max-w-3xl px-6 py-10">
         <h1 className="mb-6 text-3xl font-bold">Checkout</h1>
@@ -67,8 +65,7 @@ export default function CheckoutPage() {
           </button>
         </form>
       </main>
-
-      <Footer />
+     </PageContainer>
     </div>
   );
 }
