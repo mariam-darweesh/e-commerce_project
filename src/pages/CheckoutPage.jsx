@@ -1,7 +1,10 @@
 import PageContainer from "../components/layout/PageContainer";
+import Layout from "../components/layout/Layout";
+
+
 export default function CheckoutPage() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+    <Layout>
       <PageContainer>
 
       <main className="mx-auto max-w-3xl px-6 py-10">
@@ -66,6 +69,6 @@ export default function CheckoutPage() {
         </form>
       </main>
      </PageContainer>
-    </div>
+    </Layout>
   );
 }

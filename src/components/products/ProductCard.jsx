@@ -17,7 +17,6 @@ export default function ProductCard({ product }){
       </Link>
 
       <div className="p-5">
-        {/* <p className="text-sm text-gray-500">{product.category}</p> */}
         <Link to={`/products/${product.id}`}>
           <h3 className="mt-1 text-lg font-semibold">{product.title}</h3>
         </Link>

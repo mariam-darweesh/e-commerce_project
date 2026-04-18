@@ -19,18 +19,18 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
-          <Link to="/" className="text-sm font-medium transition hover:text-blue-600">
+          <Link to="/" className="text-md font-medium transition hover:text-blue-600">
             Home
           </Link>
           <Link
             to="/products"
-            className="text-sm font-medium transition hover:text-blue-600"
+            className="text-md font-medium transition hover:text-blue-600"
           >
             Products
           </Link>
           <Link
             to="/checkout"
-            className="text-sm font-medium transition hover:text-blue-600"
+            className="text-md font-medium transition hover:text-blue-600"
           >
             Checkout
           </Link>

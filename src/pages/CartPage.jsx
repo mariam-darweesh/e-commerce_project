@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PageContainer from "../components/layout/PageContainer";
 import useCart from "../hooks/useCart";
+import Layout from "../components/layout/Layout";
 
 export default function CartPage() {
   const {
@@ -13,7 +14,7 @@ export default function CartPage() {
   } = useCart();
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+    <Layout>
       <PageContainer>
 
       <main className="mx-auto max-w-7xl px-6 py-10">
@@ -120,6 +121,6 @@ export default function CartPage() {
         )}
       </main>
       </PageContainer>
-    </div>
+    </Layout>
   );
 }

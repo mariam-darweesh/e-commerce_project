@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ProductsList from "../components/products/ProductsList";
 import useProducts from "../hooks/useProducts";
+import Layout from "../components/layout/Layout";
 import PageContainer from "../components/layout/PageContainer";
 import Hero from "../components/home/Hero";
 
@@ -16,7 +17,7 @@ export default function HomePage() {
   ];
 
   return (
-   <div className="min-h-screen bg-gray-50 text-gray-900">
+   <Layout>
     <PageContainer>
       <main>
         <Hero />
@@ -55,6 +56,6 @@ export default function HomePage() {
         </section>
       </main>
     </PageContainer>
-  </div>
+  </Layout>
   );
 }

@@ -1,16 +1,85 @@
-# React + Vite
+🛒 Velora — E-commerce Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive e-commerce storefront built with React, demonstrating real-world frontend architecture including API integration, global state management, and dynamic routing.
 
-Currently, two official plugins are available:
+🧠 Key Highlights
+   - Real API integration (DummyJSON)
+   - Scalable React architecture (hooks, context, services)
+   - Global cart state using Context + useReducer
+   - Search, filtering, and sorting logic
+   - Persistent cart with localStorage
+   - Fully responsive UI with Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+ 🧱 Tech Stack
+   - React (Vite)
+   - Tailwind CSS
+   - React Router (v6)
+   - Context API + useReducer
+   - DummyJSON API
+   - Lucide React (icons)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+✨ Core Features
+🛍 Product Management
+   - Fetch products from API
+   - Dynamic product details page (/products/:id)
+   - Search by title
+   - Filter by category
+   - Sort by price and rating
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+🛒 Cart System
+   - Add / remove products
+   - Quantity management
+   - Real-time cart updates
+   - Cart badge in navbar
+   - Persistent cart (localStorage)
+
+📱 UI / UX
+   - Responsive layout (mobile-first)
+   - Skeleton loading states
+   - Empty states (cart & products)
+   - Clean component-based design
+   - Sticky navbar + structured layout system
+
+
+🔀 Routing
+
+Client-side routing with React Router:
+
+/               → Home
+/products       → Product listing
+/products/:id   → Product details
+/cart           → Cart page
+/checkout       → Checkout
+
+🧩 Project Structure
+    src/
+    components/
+        home/
+        layout/
+        products/
+    pages/
+    hooks/
+    context/
+    services/
+
+
+🔄 Data Flow
+    API (DummyJSON)
+    ↓
+    Custom Hooks (useProducts / useProduct)
+    ↓
+    Pages
+    ↓
+    Reusable Components
+
+    Cart State:
+    Context → Reducer → Global UI updates
+
+
+👨‍💻 Author
+
+    Mariam Darweesh
+    Frontend Developer
