@@ -82,9 +82,8 @@ src/
 │   └── products/
 │       ├── ProductCard.jsx
 │       ├── ProductsList.jsx
-│       ├── ProductFilters.jsx
-│       └── ProductCardSkeleton.jsx
-├── pages/
+│       └── ProductFilters.jsx
+│── pages/
 │   ├── HomePage.jsx
 │   ├── ProductsPage.jsx
 │   ├── ProductDetailsPage.jsx
