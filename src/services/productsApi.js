@@ -9,12 +9,3 @@ export async function getProducts() {
 
     return response.json();
 }
-
-export async function getProductById(id) {
-    const response = await fetch(`${BASE_URL}/${id}`);
-
-    if (!response.ok) {
-        throw new Error("Failed to fetch the product");
-    }
-    return response.json();
-}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 export default function useProduct(id) {
     const [product, setProduct] = useState(null);
     const[loading, setLoading] = useState(true);

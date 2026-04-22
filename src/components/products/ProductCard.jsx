@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import useCart from '../../hooks/useCart'
+import StarRating from "./StarRating";
 
 export default function ProductCard({ product }){
   const { addItem } = useCart();
@@ -23,6 +24,9 @@ export default function ProductCard({ product }){
         <p className="mt-2 line-clamp-2 text-sm text-gray-600">
           {product.description}
         </p>
+         <div className="mt-1">
+          <StarRating rating={product.rating} />
+        </div>
         <div className="mt-4 flex items-center justify-between">
           <p className="mt-2 text-xl font-bold text-blue-600">${product.price}</p>
 
