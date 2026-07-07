@@ -1,4 +1,4 @@
-import ProductCard from "./productCard";
+import ProductCard from "./ProductCard";
 
 export default function ProductsList ({ products, onAddToCart }){
     if (!products.length) {

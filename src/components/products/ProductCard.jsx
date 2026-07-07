@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import useCart from '../../hooks/useCart'
 import StarRating from "./StarRating";
+import Card from "../ui/Card";
 
 export default function ProductCard({ product }){
   const { addItem } = useCart();
